@@ -1,0 +1,11 @@
+﻿@using MVCFundamentals8.Models;
+@{
+    ViewBag.Title = "index";
+}
+<h2>GetUsers</h2>
+<h3>@ViewData["message"]</h3>
+<ul>
+    @foreach (var item in ViewData["userlist"] as IList<User>) {
+        <li>@item.Id : @item.Name : @item.Age</li>
+    }
+</ul>

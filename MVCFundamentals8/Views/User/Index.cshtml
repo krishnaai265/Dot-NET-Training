@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "UserIndex";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>UserIndex</h2>
+<h3>@ViewBag.Message</h3><br/>
+<h4>Total Number of Users : @ViewBag.TotalUsers</h4><br/>
+@foreach (var item in ViewBag.UserList) {
+    <li>@item.Id : @item.Name: @item.Age</li>
+}
+

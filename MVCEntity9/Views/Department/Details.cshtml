@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Details";
+}
+
+<ul class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">Department Detail</h3>
+    </div>
+
+    <ul div="list-group">
+        <li class="list-group-item">Department ID:@ViewBag.department.DepartmentId</li>
+        <li class="list-group-item">Department Name:@ViewBag.department.DepartmentName</li>
+        <li class="list-group-item">Department Location:@ViewBag.department.DepartmentLocation</li>
+        <li class="list-group-item">Department Added Date:@ViewBag.department.DepartmentAddedDate</li>
+        <li class="list-group-item">@Html.ActionLink("Back To List", "Index")</li>
+    </ul>
+
+
